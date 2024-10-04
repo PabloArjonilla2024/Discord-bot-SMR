@@ -36,7 +36,6 @@ client.commands = new Collection();
 require("dotenv").config();
 
 const { ActivityType, EmbedBuilder, Events } = require("discord.js");
-const Recordatorio = require('./schemas/recordatorios.js');
 const moment = require('moment-timezone');
 client.once(Events.ClientReady, async (client) => {
   client.user.setPresence({
