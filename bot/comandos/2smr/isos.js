@@ -12,7 +12,8 @@ module.exports = {
         { name: 'Ubuntu Escritorio', value: 'ubuntue' },
         { name: 'Linux Mint', value: 'linuxm' },
         { name: 'Windows Server', value: 'windowss' },
-        { name: 'Windows Escritorio', value: 'windowse' },
+        { name: 'Windows 10', value: 'windows10' },
+        { name: 'Windows 11', value: 'windows11' },
       )
       .setRequired(true)),
   category: "dossmr",
@@ -61,10 +62,20 @@ module.exports = {
           ], ephemeral: false
         })
       } break;
-      case "windowse": {
+      case "windows10": {
         return interaction.reply({
           embeds: [new EmbedBuilder()
-            .setDescription(`Para descargar Windows Escritorio haz click [aquí](https://mega.nz/file/QL0XwBTQ#yHpZvU61nIsFM_iscOm2A9AJHnzVbwl2YS1X4TSllV4)`)
+            .setDescription(`Para descargar Windows 10 haz click [aquí](https://mega.nz/file/QL0XwBTQ#yHpZvU61nIsFM_iscOm2A9AJHnzVbwl2YS1X4TSllV4)`)
+            .setColor("Green")
+            .setTimestamp()
+            .setFooter({ text: 'Bot realizado por ACPARJO', iconURL: client.user.displayAvatarURL() })
+          ], ephemeral: false
+        })
+      } break;
+      case "windows11": {
+        return interaction.reply({
+          embeds: [new EmbedBuilder()
+            .setDescription(`Para descargar Windows 11 haz click [aquí](https://mega.nz/file/YSNyiZLR#OEB5GW3ClYoQV4VjtzcdVYnWvYWLRBbP7DugVP9Itws)`)
             .setColor("Green")
             .setTimestamp()
             .setFooter({ text: 'Bot realizado por ACPARJO', iconURL: client.user.displayAvatarURL() })
