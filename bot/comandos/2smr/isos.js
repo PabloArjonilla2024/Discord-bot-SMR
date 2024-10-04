@@ -16,7 +16,7 @@ module.exports = {
         { name: 'Windows 11', value: 'windows11' },
       )
       .setRequired(true)),
-  category: "dossmr",
+  category: "general",
   usage: "Obtener enlaces para las ISO",
   n: "</isos:1276173928368181351>",
   async execute(interaction, client) {
