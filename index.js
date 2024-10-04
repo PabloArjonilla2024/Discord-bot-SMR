@@ -56,7 +56,7 @@ const KeepAlive = require("./inicializacion_eventos/server.js")
 
 async function main() {
   await client.login(process.env.BOT_TOKEN).then(console.log(`Se ha iniciado sesión correctamente`));
-  await Errores();
+  //await Errores();
   await Mongo();
   await Slash(client);
   await Eventos(client);
