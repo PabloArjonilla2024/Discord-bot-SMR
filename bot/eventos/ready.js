@@ -1,6 +1,4 @@
 const { ActivityType, Events } = require("discord.js");
-const Recordatorio = require('../../schemas/recordatorios.js');
-const moment = require('moment');
 
 module.exports = {
   name: Events.ClientReady,
