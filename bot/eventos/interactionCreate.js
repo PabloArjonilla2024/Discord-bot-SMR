@@ -29,6 +29,7 @@ module.exports = {
     }
 
     if (interaction.isButton() && interaction.customId == "cerrar") {
+      console.log(interaction.customId);
       await interaction.update({
         embeds: [new EmbedBuilder()
           .setDescription("El canal único se eliminará en 5 segundos.")
