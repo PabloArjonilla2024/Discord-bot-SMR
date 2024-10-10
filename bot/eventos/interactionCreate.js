@@ -34,7 +34,7 @@ module.exports = {
           .setDescription("El canal único se eliminará en 5 segundos.")
           .setColor("Green")
           .setTimestamp()
-        ], ephemeral: true
+        ]
       })
       setTimeout(async () => interaction.channel.delete(), 5000);
     }
